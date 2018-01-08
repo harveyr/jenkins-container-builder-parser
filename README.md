@@ -9,3 +9,12 @@ It reports step durations.
 Container Builder does not yet show which steps failed or how long steps take, so this is a stopgap.
 
 Very much for my own haphazard use in optimizing our Jenkins jobs.
+
+To use it, append `/timestamps/?elapsed=HH:mm:ss&appendLog` to the end
+of your job URL, download the resulting logs, and run:
+
+```bash
+python main.py --file /path/to/logs.txt
+```
+
+I'm piping the output to the wonderful [visidata](https://github.com/saulpw/visidata).
