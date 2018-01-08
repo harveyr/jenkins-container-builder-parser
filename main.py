@@ -14,10 +14,8 @@ data = {}
 
 
 @click.command()
-# @click.option('--host', type=str, default='localhost')
-# @click.option('--port', type=int, default=8080)
 @click.option('--file', 'fpath', type=str, default=None)
-def main(port: int, host: str, fpath: str):
+def main(fpath: str):
     raw_logs = None
 
     if fpath:

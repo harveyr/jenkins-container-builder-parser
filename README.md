@@ -17,4 +17,8 @@ of your job URL, download the resulting logs, and run:
 python main.py --file /path/to/logs.txt
 ```
 
-I'm piping the output to the wonderful [visidata](https://github.com/saulpw/visidata).
+I'm piping the output to the wonderful [visidata](https://github.com/saulpw/visidata):
+
+```bash
+python main.py --file /path/to/logs.txt | vd -f csv
+```
