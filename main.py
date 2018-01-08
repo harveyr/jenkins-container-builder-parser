@@ -46,9 +46,7 @@ def build_csv():
             step_data['name'],
             started,
             finished,
-            (
-                finished - started if finished else None
-            )
+            finished - started if finished else None,
         ])
 
     f.seek(0)
